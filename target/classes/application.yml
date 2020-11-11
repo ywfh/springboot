@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    username: root
+    password: 2606882900
+    url: jdbc:mysql://localhost:3306/ywfh?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:static/
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
